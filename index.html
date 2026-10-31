@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Essex Roleplay — a UK-based FiveM roleplay community. Join the community and follow development.">
+<title>Essex Roleplay | Your Story Starts Here</title>
+<style>
+:root{--bg:#fff;--soft:#f5f8fc;--panel:#fff;--line:#e5ebf2;--text:#142238;--muted:#627187;--blue:#1769aa;--blue2:#2699c8;--cyan:#dff5fb;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:13px;font-weight:950;letter-spacing:.08em;color:var(--text)}.logo{width:52px;height:52px;object-fit:contain;display:block}.brand-fallback{width:48px;height:48px;border-radius:12px;background:#eaf4fb;color:var(--blue);display:grid;place-items:center;font-weight:1000;font-size:20px;border:1px solid #d5e7f4}.brand small{display:block;color:#7d8da1;font-size:9px;letter-spacing:.22em;font-weight:800}.links{display:flex;align-items:center;gap:26px;color:#52647b;font-size:12px;font-weight:800}.links a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:8px;font-size:12px;font-weight:900;letter-spacing:.04em;transition:.2s;border:1px solid transparent}.btn.primary{background:linear-gradient(100deg,var(--blue),var(--blue2));color:#fff;box-shadow:0 8px 22px #1769aa25}.btn.primary:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn.secondary{border-color:#cbd7e4;background:#fff;color:var(--text)}.btn.secondary:hover{border-color:var(--blue);color:var(--blue)}
+.hero{position:relative;overflow:hidden;padding:105px 0 92px;background:linear-gradient(120deg,#fff 45%,#f0f8fc)}.hero:before{content:"";position:absolute;width:580px;height:580px;border-radius:50%;right:-140px;top:-220px;background:radial-gradient(circle,#dff3fb 0,rgba(223,243,251,0) 70%)}.hero:after{content:"";position:absolute;inset:0;background-image:linear-gradient(#1769aa08 1px,transparent 1px),linear-gradient(90deg,#1769aa08 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,black,transparent)}
+.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px}.eyebrow{color:var(--blue);font-size:10px;letter-spacing:.25em;font-weight:950;text-transform:uppercase;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:27px;height:2px;background:var(--blue)}h1{font-size:clamp(48px,7vw,82px);line-height:.99;letter-spacing:-.065em;margin:22px 0;color:#142238}.grad{background:linear-gradient(100deg,#1769aa,#2699c8);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{max-width:590px;color:#5d6e83;font-size:17px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:29px}.fine{font-size:11px;color:#8290a2;margin-top:18px}.hero-art{min-height:350px;display:grid;place-items:center;position:relative}.logo-stage{width:min(350px,76vw);aspect-ratio:1;border-radius:50%;border:1px solid #cfe3ef;display:grid;place-items:center;position:relative;background:radial-gradient(circle,#fff 35%,#f0f8fc 72%,#e4f2f9);box-shadow:0 20px 65px #1b5e8512}.logo-stage:before,.logo-stage:after{content:"";position:absolute;border:1px solid #d6e8f1;border-radius:50%}.logo-stage:before{inset:27px}.logo-stage:after{inset:58px}.hero-logo{position:relative;z-index:1;width:58%;height:58%;object-fit:contain}.stage-caption{position:absolute;bottom:20px;color:#7990a5;font-size:9px;letter-spacing:.25em;font-weight:900}
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}.statgrid{display:grid;grid-template-columns:repeat(3,1fr)}.stat{padding:23px 18px;text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font-size:16px;letter-spacing:.04em;color:#1a2b42}.stat span{font-size:9px;color:#8290a2;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+section{padding:82px 0}.soft-section{background:var(--soft)}.section-head{max-width:720px;margin-bottom:34px}.kicker{font-size:10px;letter-spacing:.23em;text-transform:uppercase;color:var(--blue);font-weight:950}.section-head h2{font-size:clamp(32px,4vw,47px);letter-spacing:-.045em;line-height:1.1;margin:11px 0;color:#142238}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:25px;border:1px solid var(--line);border-radius:13px;background:#fff;min-height:205px;transition:.2s;box-shadow:0 8px 25px #1b35500a}.card:hover{transform:translateY(-4px);border-color:#a8cce2;box-shadow:0 14px 30px #1b355012}.icon{width:43px;height:43px;border-radius:10px;display:grid;place-items:center;background:#edf6fc;border:1px solid #d9eaf5;color:var(--blue);font-size:19px}.card h3{margin:17px 0 6px;font-size:16px}.card p{margin:0;color:var(--muted);font-size:13px}.departments{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.dept{display:flex;align-items:center;gap:13px;padding:17px;border:1px solid var(--line);background:#fff;border-radius:11px}.dept .icon{flex:0 0 43px}.dept h3{font-size:13px;margin:0}.dept p{font-size:11px;color:var(--muted);margin:3px 0 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.feature-panel{border:1px solid #dce8f0;border-radius:17px;padding:30px;background:linear-gradient(145deg,#f7fbfe,#eaf5fb)}.feature-panel .big{font-size:43px;font-weight:950;letter-spacing:-.06em;line-height:1.05;color:#1769aa}.feature-panel p{color:var(--muted);font-size:13px}.list{list-style:none;padding:0;margin:22px 0}.list li{padding:10px 0;border-bottom:1px solid var(--line);color:#506176;font-size:13px}.list li:before{content:"✓";color:var(--blue);font-weight:950;margin-right:12px}.notice{border:1px solid #ead9a7;background:#fffaf0;padding:15px 17px;border-radius:9px;color:#78602b;font-size:12px}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq details{border:1px solid var(--line);border-radius:10px;background:#fff;padding:16px 18px}.faq summary{font-weight:850;font-size:13px;cursor:pointer}.faq details p{color:var(--muted);font-size:12px;margin-bottom:0}
+.cta{padding:48px;border-radius:17px;border:1px solid #d6e8f2;background:linear-gradient(110deg,#f1f8fc,#e6f4fa);display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{font-size:clamp(27px,4vw,40px);letter-spacing:-.04em;margin:0 0 7px}.cta p{color:var(--muted);margin:0}
+footer{border-top:1px solid var(--line);padding:30px 0;color:#718197;font-size:11px;background:#fff}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.footlinks{display:flex;gap:18px;flex-wrap:wrap}.foot a:hover{color:var(--blue)}
+@media(max-width:850px){.links{display:none}.hero-inner,.split{grid-template-columns:1fr}.hero{padding:75px 0}.hero-art{min-height:285px}.cards,.departments{grid-template-columns:repeat(2,1fr)}.cta{padding:32px;display:block}.cta .actions{margin-top:20px}}
+@media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.nav{height:70px}.logo,.brand-fallback{width:43px;height:43px}.stat{padding:17px 7px}.stat strong{font-size:12px}.stat span{font-size:8px}.cards,.departments,.faq{grid-template-columns:1fr}section{padding:62px 0}.foot{align-items:flex-start;flex-direction:column}.hero-art{min-height:250px}.logo-stage{width:260px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home">
+  <img class="logo" src="logo.png" alt="Essex Roleplay logo" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+  <span class="brand-fallback" style="display:none">ER</span>
+  <span>ESSEX ROLEPLAY<small>YOUR STORY STARTS HERE</small></span>
+</a>
+<nav class="links"><a href="#about">ABOUT</a><a href="#departments">DEPARTMENTS</a><a href="#development">DEVELOPMENT</a><a href="#faq">FAQ</a></nav>
+<a class="btn primary" href="https://dc.gg/essexroleplay" target="_blank" rel="noopener">JOIN THE DISCORD ↗</a>
+</div></header>
+<main id="home">
+<section class="hero"><div class="wrap hero-inner">
+<div><div class="eyebrow">A UK FiveM roleplay community</div><h1><span class="grad">YOUR STORY.</span><br>YOUR ESSEX.</h1>
+<p class="lead">Step into a community built around immersive roleplay, memorable moments and a shared passion for the world of FiveM. Your next chapter starts here.</p>
+<div class="actions"><a class="btn primary" href="https://dc.gg/essexroleplay" target="_blank" rel="noopener">JOIN OUR COMMUNITY ↗</a><a class="btn secondary" href="#development">EXPLORE DEVELOPMENT</a></div>
+<p class="fine">Independent community project. Not affiliated with Essex Police, Essex County Council, or emergency services.</p></div>
+<div class="hero-art"><div class="logo-stage"><img class="hero-logo" src="logo.png" alt="Essex Roleplay logo"><div class="stage-caption">ESSEX ROLEPLAY</div></div></div>
+</div></section>
+<div class="stats"><div class="wrap statgrid"><div class="stat"><strong>UK-INSPIRED</strong><span>Roleplay setting</span></div><div class="stat"><strong>COMMUNITY FIRST</strong><span>People make the experience</span></div><div class="stat"><strong>IN DEVELOPMENT</strong><span>Follow the progress</span></div></div></div>
+<section id="about"><div class="wrap"><div class="section-head"><div class="kicker">Welcome to Essex</div><h2>More than a server.<br>A community to be part of.</h2><p>Essex Roleplay is being developed with a focus on organised departments, engaging civilian experiences and a welcoming community. Whether you're interested in public services, everyday civilian life or simply meeting other roleplayers, there's a place for you.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">✦</div><h3>Immersive experiences</h3><p>Build stories with other members and help create roleplay moments worth remembering.</p></article>
+<article class="card"><div class="icon">♧</div><h3>Community-led</h3><p>Share ideas, meet the community and help shape the direction of the project.</p></article>
+<article class="card"><div class="icon">⚙</div><h3>Always developing</h3><p>Follow progress, previews and updates as the server takes shape.</p></article>
+</div></div></section>
+<section id="departments" class="soft-section"><div class="wrap"><div class="section-head"><div class="kicker">Find your place</div><h2>Departments & services</h2><p>Explore the planned public-service side of the Essex Roleplay world. Department availability, recruitment and structure may change during development.</p></div>
+<div class="departments">
+<div class="dept"><div class="icon">🚔</div><div><h3>Essex Police Service</h3><p>Policing and public safety roleplay</p></div></div>
+<div class="dept"><div class="icon">🚒</div><div><h3>Essex Fire & Rescue Service</h3><p>Fire and rescue roleplay</p></div></div>
+<div class="dept"><div class="icon">🚑</div><div><h3>Ambulance Service</h3><p>Pre-hospital care roleplay</p></div></div>
+<div class="dept"><div class="icon">🚓</div><div><h3>Essex Transport Police</h3><p>Transport-focused roleplay</p></div></div>
+<div class="dept"><div class="icon">🚧</div><div><h3>Essex Highways</h3><p>Road network and highways roleplay</p></div></div>
+<div class="dept"><div class="icon">✚</div><div><h3>UK Search & Rescue</h3><p>Search and rescue scenarios</p></div></div>
+</div></div></section>
+<section id="development"><div class="wrap split">
+<div><div class="kicker">Behind the scenes</div><h2 style="font-size:clamp(32px,4vw,47px);line-height:1.08;letter-spacing:-.045em;margin:12px 0">Built with care.<br>Improved together.</h2><p style="color:var(--muted)">We're working behind the scenes to bring the Essex Roleplay experience together. Join the Discord to follow development announcements, sneak peeks and community news.</p>
+<ul class="list"><li>Development announcements and progress updates</li><li>Vehicle, uniform and map previews</li><li>Script updates and feature showcases</li><li>Community suggestions and feedback</li></ul><a class="btn primary" href="https://dc.gg/essexroleplay" target="_blank" rel="noopener">FOLLOW DEVELOPMENT ↗</a></div>
+<div class="feature-panel"><div class="kicker">Current project status</div><div class="big">IN<br>DEVELOPMENT</div><p>Essex Roleplay is currently in development. Follow our official Discord for confirmed launch news and recruitment announcements.</p><div class="notice">Release timing and access details will be confirmed through official Essex Roleplay announcements.</div></div>
+</div></section>
+<section id="faq" class="soft-section"><div class="wrap"><div class="section-head"><div class="kicker">Need to know</div><h2>Frequently asked questions</h2><p>A few quick answers about Essex Roleplay.</p></div>
+<div class="faq">
+<details><summary>How do I join Essex Roleplay?</summary><p>Join our Discord using the invite link on this website. That's where we'll share updates, community information and confirmed access details.</p></details>
+<details><summary>Is the server open yet?</summary><p>The project is in development. We'll announce public access and any recruitment openings through the official Discord.</p></details>
+<details><summary>Can I apply for a department?</summary><p>Keep an eye on Discord announcements and application channels for confirmed vacancies and application instructions.</p></details>
+<details><summary>Where can I report a bug or suggest an idea?</summary><p>Use the relevant development or support channels in our Discord so the team can review your feedback.</p></details>
+<details><summary>Is this an official Essex public-service website?</summary><p>No. Essex Roleplay is an independent gaming community and is not affiliated with any real-world police, fire, ambulance or government organisation.</p></details>
+<details><summary>Where will launch news be posted?</summary><p>All confirmed launch updates will be shared in the official Essex Roleplay Discord.</p></details>
+</div></div></section>
+<section><div class="wrap"><div class="cta"><div><div class="kicker">Be part of the journey</div><h2>Ready to join the community?</h2><p>Meet the community and keep up with everything happening behind the scenes.</p></div><div class="actions"><a class="btn primary" href="https://dc.gg/essexroleplay" target="_blank" rel="noopener">JOIN ESSEX ROLEPLAY ↗</a></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong style="color:#24364d;letter-spacing:.12em">ESSEX ROLEPLAY</strong><br>© <span id="year"></span> Essex Roleplay. All rights reserved.</div><div class="footlinks"><a href="#home">Back to top ↑</a><a href="https://dc.gg/essexroleplay" target="_blank" rel="noopener">Discord</a></div><div>Independent FiveM roleplay community.</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
